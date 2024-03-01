@@ -23,14 +23,14 @@ steps:
       - git clone ssh://git@github.com:andikadeveloper/flutter_drone_ci.git
       - cd mytok
 
-  # Step 2: Install Flutter dependencies
-  - name: install_flutter_dependencies
-    image: cirrusci/flutter:stable
-    commands:
-      - flutter pub get
+  # # Step 2: Install Flutter dependencies
+  # - name: install_flutter_dependencies
+  #   image: cirrusci/flutter:stable
+  #   commands:
+  #     - flutter pub get
 
-  # Step 3: Build Android app
-  - name: build_app
-    image: cirrusci/flutter:stable
-    commands:
-      - flutter build apk --release
+  # # Step 3: Build Android app
+  # - name: build_app
+  #   image: cirrusci/flutter:stable
+  #   commands:
+  #     - flutter build apk --release
