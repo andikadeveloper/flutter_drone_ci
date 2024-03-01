@@ -32,4 +32,4 @@ steps:
         from_secret: firebase_app_id
     commands:
       - npm install -g firebase-tools
-      - firebase appdistribution:distribute ./build/app/outputs/flutter-apk/app-release.apk --app $env:FIREBASE_APP_ID --token $env:FIREBASE_TOKEN
+      - firebase --token $env:FIREBASE_TOKEN appdistribution:distribute ./build/app/outputs/flutter-apk/app-release.apk --app $env:FIREBASE_APP_ID
