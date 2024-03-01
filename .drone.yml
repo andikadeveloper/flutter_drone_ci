@@ -27,8 +27,8 @@ steps:
     image: node:14
     commands:
       - npm install -g firebase-tools
-      - firebase login:ci --no-localhost --token "$FIREBASE_TOKEN"
-      - firebase appdistribution:distribute ./build/app/outputs/flutter-apk/app-release.apk --app $FIREBASE_APP_ID --token "$FIREBASE_TOKEN"
+      - firebase login:ci --no-localhost --token $env:FIREBASE_TOKEN
+      - firebase appdistribution:distribute ./build/app/outputs/flutter-apk/app-release.apk --app $env:FIREBASE_APP_ID --token $env:FIREBASE_TOKEN
 
 environment:
   FIREBASE_TOKEN:
