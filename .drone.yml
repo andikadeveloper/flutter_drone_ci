@@ -8,8 +8,6 @@ trigger:
     - main
   event:
     - tag
-  ref:
-    - refs/tags/v\d+\.\d+\.\d+-beta
 
 # Define the platform where your pipeline runs
 platform:
