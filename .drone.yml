@@ -24,7 +24,7 @@ steps:
       - flutter build apk --release
 
   - name: deploy_to_firebase
-    image: node:14
+    image: node:latest
     environment:
       FIREBASE_TOKEN:
         from_secret: firebase_token
