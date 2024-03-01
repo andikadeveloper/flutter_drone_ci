@@ -16,12 +16,12 @@ platform:
 
 # Define steps of the pipeline
 steps:
-  # Step 1: Clone the repository
-  - name: clone
-    image: alpine/git
-    commands:
-      - git clone ssh://git@github.com:andikadeveloper/flutter_drone_ci.git
-      - cd mytok
+# Step 1: Clone the repository
+- name: clone
+  image: alpine/git
+  commands:
+    - git clone ssh://git@github.com:andikadeveloper/flutter_drone_ci.git
+    - cd mytok
 
   # # Step 2: Install Flutter dependencies
   # - name: install_flutter_dependencies
