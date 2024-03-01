@@ -3,6 +3,8 @@ name: flutter-ci
 
 # Define when this pipeline should be executed
 trigger:
+  branch:
+    - main
   event:
     - tag
   ref:
